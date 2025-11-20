@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            background-color: rgba(128, 128, 128, 0.356);
+        }   
+        nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.5rem 0;
+        }
+        .para{
+            font-size: 1.5rem;
+            font-weight: 300;
+            text-transform: capitalize;
+        }
+        .primary-container{
+            height: 40vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
+        .box{
+            border: 1px solid rgb(50, 50, 50);
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: capitalize;
+        }
+        .userName{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        input[type="text"]{
+            padding: 0.5rem;
+            border: 1px solid rgb(100, 100, 100);
+            
+        }
+        .btn{
+            padding: 0.5rem 0.8rem;
+            border: 1px solid rgb(100, 100, 100);
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="para">hello<span ></span></h1>
+        </nav>
+    </header>
+    <main>
+        <div class="primary-container">
+            <div class="box" id="box-1">red</div>
+            <div class="box" id="box-2">blue</div>
+            <div class="box" id="box-3">green</div>
+            <div class="box" id="box-4">yellow</div>
+        </div>
+        <form class="userName" action="#">
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <button class="btn" type="submit">greet</button>
+        </form>
+    </main>
+<script src="script.js"></script>  
+</body>
+</html>
